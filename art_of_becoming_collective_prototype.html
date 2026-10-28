@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f6f3ed"><title>The Art of Becoming Collective — Habit Journal</title><style>
+:root{--paper:#f6f3ed;--card:#fffdf8;--ink:#292b25;--muted:#77796f;--sage:#7d8970;--pale:#e7eadf;--line:#e4e0d6;--accent:#b28c68;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,sans-serif;line-height:1.45}.wrap{max-width:1100px;margin:auto;padding:24px 18px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:18px}.brand{font:italic 24px var(--serif)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:var(--muted)}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:11px;color:var(--muted)}.hero{padding:36px 0 24px}.hero h1{font:normal clamp(38px,8vw,68px)/1.02 var(--serif);letter-spacing:-.045em;margin:10px 0 12px}.hero p{color:var(--muted);max-width:540px;font-size:14px}.stats{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px;margin:20px 0 26px}.stat,.panel{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px}.stat small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.12em}.stat strong{display:block;font:30px var(--serif);margin-top:5px}.bar{height:4px;background:var(--pale);border-radius:9px;margin-top:12px;overflow:hidden}.bar span{display:block;height:100%;width:0;background:var(--sage);transition:width .25s}.weeknav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.weeknav button,.daybtn,.action{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:10px 13px;font-size:13px}.weeknav button:disabled{opacity:.3}.weekname{font:22px var(--serif);text-align:center}.weekname small{display:block;font:10px Arial;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;margin-bottom:18px}.daybtn{text-align:center;padding:12px 4px;min-height:68px}.daybtn b{display:block;font-size:11px}.daybtn span{display:block;font:18px var(--serif);margin:3px}.daybtn.active{background:var(--sage);color:white;border-color:var(--sage)}.daybtn.today:not(.active){border-color:var(--accent)}.daybtn .mini{font:10px Arial;opacity:.75}.content{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.8fr);gap:16px;align-items:start}.panel{border-radius:17px;padding:20px}.panelhead{display:flex;align-items:start;justify-content:space-between;gap:12px;margin-bottom:15px}.panel h2{font:25px var(--serif);font-weight:normal;margin:0}.sub{font-size:12px;color:var(--muted);margin-top:5px}.count{font-size:11px;background:var(--pale);color:#495341;padding:7px 10px;border-radius:999px;white-space:nowrap}.group{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:20px 0 8px}.habit{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);cursor:pointer}.check{width:22px;height:22px;flex:0 0 22px;border:1px solid #c9c8bc;border-radius:50%;display:grid;place-items:center;color:white;font-size:13px}.habit.done .check{background:var(--sage);border-color:var(--sage)}.habit.done .label{color:#85877c;text-decoration:line-through}.label{font-size:13px}.note{font-size:11px;color:var(--muted);margin-top:16px}.reflection label{display:block;font-size:12px;margin:15px 0 6px;color:#55584e}.reflection textarea{width:100%;resize:vertical;min-height:70px;border:1px solid var(--line);border-radius:10px;padding:11px;background:#fffefa;color:var(--ink);font:13px Arial;outline-color:var(--sage)}.reflection .action{background:var(--ink);color:white;border-color:var(--ink);margin-top:10px}.saved{font-size:11px;color:var(--sage);margin-left:10px}.footer{text-align:center;color:var(--muted);font:italic 15px var(--serif);padding-top:35px}@media(max-width:720px){.wrap{padding:16px 13px 40px}.hero{padding:29px 0 15px}.stats{gap:7px}.stat{padding:12px}.stat strong{font-size:25px}.content{grid-template-columns:1fr}.panel{padding:17px}.days{gap:4px}.daybtn{min-height:62px;padding:9px 2px}.daybtn b{font-size:10px}.daybtn span{font-size:16px}.weekname{font-size:18px}.weeknav button{padding:9px}.top .pill{font-size:9px;padding:7px 9px}}
+
+/* The Art of Becoming Collective: theme personalisation */
+:root {
+  --paper: #F6F3ED;
+  --sage: #7D8970;
+  --ink: #33382F;
+  --surface: #FFFEFB;
+  --line: #DCDDD2;
+  --muted: #77796F;
+}
+body {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  transition: background-color .2s ease, color .2s ease;
+}
+.card, .panel, .habit-card, .week-card, .reflection-card, section {
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.theme-tools {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  margin: 14px 0 20px;
+}
+.theme-tools button {
+  border: 1px solid var(--line); border-radius: 999px; padding: 9px 13px;
+  background: var(--surface); color: var(--ink); cursor: pointer;
+  font: inherit; font-size: .9rem;
+}
+.theme-tools button:focus-visible { outline: 2px solid var(--sage); outline-offset: 3px; }
+.theme-tools .palette-dot {
+  display:inline-block; width:11px; height:11px; border-radius:50%;
+  margin-right:6px; border:1px solid rgba(0,0,0,.12); vertical-align:-1px;
+}
+.theme-tools button[aria-pressed="true"] { box-shadow: inset 0 0 0 1px var(--sage); }
+body[data-theme="sage"] {
+  --paper:#F6F3ED; --surface:#FFFEFB; --ink:#33382F; --sage:#7D8970; --line:#DCDDD2; --muted:#77796F;
+}
+body[data-theme="clay"] {
+  --paper:#F7F0EB; --surface:#FFFCF9; --ink:#40352F; --sage:#A87562; --line:#E4D5CC; --muted:#806F66;
+}
+body[data-theme="blue"] {
+  --paper:#EEF2F3; --surface:#FBFDFD; --ink:#303B41; --sage:#71899A; --line:#D4DFE3; --muted:#6F7C82;
+}
+body[data-theme="rose"] {
+  --paper:#F6EFF0; --surface:#FFFBFC; --ink:#42343A; --sage:#AD8490; --line:#E5D6DB; --muted:#806E75;
+}
+body[data-theme="dark"] {
+  --paper:#171A18; --surface:#222724; --ink:#F0EEE7; --sage:#A7B69A; --line:#3B433D; --muted:#B5B9AF;
+  color-scheme: dark;
+}
+body[data-theme="dark"] input,
+body[data-theme="dark"] textarea,
+body[data-theme="dark"] select {
+  background:#222724 !important; color:#F0EEE7 !important; border-color:#3B433D !important;
+}
+body[data-theme="dark"] button { color:var(--ink); }
+
+</style></head><body><main class="wrap"><header class="top"><div><div class="eyebrow">A personal practice</div><div class="brand">the art of becoming collective<span style="color:var(--accent)">.</span></div></div><div class="pill">26 OCT — 03 JAN · 2027</div></header>
+
+<div class="theme-tools" id="theme-tools" aria-label="Appearance settings">
+  <strong>Appearance</strong>
+  <button type="button" data-theme-choice="sage" aria-pressed="true"><span class="palette-dot" style="background:#7D8970"></span>Cream &amp; Sage</button>
+  <button type="button" data-theme-choice="clay" aria-pressed="false"><span class="palette-dot" style="background:#A87562"></span>Warm Clay</button>
+  <button type="button" data-theme-choice="blue" aria-pressed="false"><span class="palette-dot" style="background:#71899A"></span>Dusty Blue</button>
+  <button type="button" data-theme-choice="rose" aria-pressed="false"><span class="palette-dot" style="background:#AD8490"></span>Soft Rose</button>
+  <button type="button" data-theme-choice="dark" aria-pressed="false">☾ Dark mode</button>
+</div>
+<section class="hero"><div class="eyebrow" id="todayLabel">YOUR SPACE TO BEGIN AGAIN</div><h1>Small rituals.<br><i>Lasting change.</i></h1><p>A little structure for the person you’re becoming. Show up as you are; every small check-in counts.</p></section><section class="stats"><div class="stat"><small>Selected day</small><strong id="dayScore">0 / 12</strong><div class="bar"><span id="dayBar"></span></div></div><div class="stat"><small>This week</small><strong id="weekScore">0%</strong><div class="bar"><span id="weekBar"></span></div></div><div class="stat"><small>Days in this reset</small><strong id="daysElapsed">03</strong><div class="sub">one day at a time</div></div></section><div class="weeknav"><button id="prev">← Previous</button><div class="weekname"><small>Week <span id="weekNumber">01</span></small><span id="weekRange">26 Oct – 01 Nov</span></div><button id="next">Next →</button></div><div class="days" id="days"></div><section class="content"><div class="panel"><div class="panelhead"><div><h2 id="selectedDate">Monday, 26 October</h2><div class="sub">Your daily intentions</div></div><div class="count" id="habitCount">0 of 12 complete</div></div><div id="habits"></div><div class="note">Progress saves automatically in this browser on this device.</div></div><aside class="panel"><div class="eyebrow">A moment to reflect</div><h2 style="margin-top:8px">Sunday notes</h2><div class="sub">A few honest lines are enough.</div><div class="reflection"><label for="wentWell">What went well this week?</label><textarea id="wentWell" placeholder="Notice what worked…"></textarea><label for="gotInWay">What got in the way?</label><textarea id="gotInWay" placeholder="Without judgement…"></textarea><label for="adjustment">One adjustment for next week</label><textarea id="adjustment" placeholder="Keep it realistic…"></textarea><label for="learned">One thing I learned</label><textarea id="learned" placeholder="A thought worth keeping…"></textarea><button class="action" id="saveReview">Save reflection</button><span class="saved" id="savedStatus" aria-live="polite"></span></div></aside></section><div class="footer">You don’t have to do it perfectly. Just return to it.</div></main><script>
+const habits=[['MORNING','Wake up at 6:00 am'],['MORNING','Stretch'],['MOVEMENT','Walk / move outside'],['NOURISH','Breakfast'],['NOURISH','Lunch'],['NOURISH','Dinner'],['NOURISH','Snack / extra calories'],['MIND','Intentional breathing'],['MIND','Journal'],['LEARNING','Focused university study'],['LEARNING','Read / learn for 20 minutes'],['CARE','Drink a bottle of water']];
+const start=new Date(2026,9,26,12),end=new Date(2027,0,3,12),today=new Date();const fmt=(d,o)=>d.toLocaleDateString('en-AU',o),keyDate=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;const load=(k)=>{try{return JSON.parse(localStorage.getItem(k))||{}}catch{return {}}},save=(k,v)=>localStorage.setItem(k,JSON.stringify(v));let weekIndex=Math.max(0,Math.min(9,Math.floor((new Date(today.getFullYear(),today.getMonth(),today.getDate(),12)-start)/604800000)));let selected=new Date(Math.max(start.getTime(),Math.min(end.getTime(),new Date(today.getFullYear(),today.getMonth(),today.getDate(),12).getTime()))),checks=load('resetChecks'),reviews=load('resetReviews');const $=id=>document.getElementById(id);function dateAtWeek(i){return new Date(start.getTime()+i*7*86400000)}function key(d){return keyDate(d)}
+function render(){const ws=dateAtWeek(weekIndex),we=new Date(ws.getTime()+6*86400000);$('weekNumber').textContent=String(weekIndex+1).padStart(2,'0');$('weekRange').textContent=`${fmt(ws,{day:'2-digit',month:'short'})} – ${fmt(we,{day:'2-digit',month:'short',year:'numeric'})}`;$('prev').disabled=weekIndex===0;$('next').disabled=weekIndex===9;$('days').innerHTML='';for(let i=0;i<7;i++){let d=new Date(ws.getTime()+i*86400000),b=document.createElement('button');b.className='daybtn'+(key(d)===key(selected)?' active':'')+(key(d)===key(today)?' today':'');b.innerHTML=`<b>${fmt(d,{weekday:'short'})}</b><span>${d.getDate()}</span><div class="mini">${(checks[key(d)]||[]).filter(Boolean).length}/12</div>`;b.onclick=()=>{selected=d;render()};$('days').appendChild(b)}$('selectedDate').textContent=fmt(selected,{weekday:'long',day:'numeric',month:'long'});$('todayLabel').textContent=key(selected)===key(today)?'TODAY, AT YOUR OWN PACE':fmt(selected,{weekday:'long',month:'long',day:'numeric'}).toUpperCase();const done=checks[key(selected)]||[];$('habits').innerHTML='';let last='';habits.forEach(([group,label],i)=>{if(group!==last){let h=document.createElement('div');h.className='group';h.textContent=group;$('habits').appendChild(h);last=group}let row=document.createElement('div');row.className='habit'+(done[i]?' done':'');row.setAttribute('role','checkbox');row.setAttribute('aria-checked',!!done[i]);row.tabIndex=0;row.innerHTML=`<span class="check">${done[i]?'✓':''}</span><span class="label">${label}</span>`;const toggle=()=>{let a=checks[key(selected)]||Array(12).fill(false);a[i]=!a[i];checks[key(selected)]=a;save('resetChecks',checks);render()};row.onclick=toggle;row.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();toggle()}};$('habits').appendChild(row)});const total=done.filter(Boolean).length;$('dayScore').textContent=`${total} / 12`;$('dayBar').style.width=total/12*100+'%';$('habitCount').textContent=`${total} of 12 complete`;let weeklyDone=0;for(let i=0;i<7;i++)weeklyDone+=(checks[key(new Date(ws.getTime()+i*86400000))]||[]).filter(Boolean).length;let pct=Math.round(weeklyDone/84*100);$('weekScore').textContent=pct+'%';$('weekBar').style.width=pct+'%';$('daysElapsed').textContent=String(Math.max(1,Math.min(70,Math.floor((selected-start)/86400000)+1))).padStart(2,'0');const r=reviews[key(ws)]||{};['wentWell','gotInWay','adjustment','learned'].forEach(id=>$(id).value=r[id]||'');$('savedStatus').textContent=''}$('prev').onclick=()=>{weekIndex=Math.max(0,weekIndex-1);selected=dateAtWeek(weekIndex);render()};$('next').onclick=()=>{weekIndex=Math.min(9,weekIndex+1);selected=dateAtWeek(weekIndex);render()};$('saveReview').onclick=()=>{reviews[key(dateAtWeek(weekIndex))]={wentWell:$('wentWell').value,gotInWay:$('gotInWay').value,adjustment:$('adjustment').value,learned:$('learned').value};save('resetReviews',reviews);$('savedStatus').textContent='Saved ✓'};render();</script>
+<script>
+(function () {
+  const key = 'aobc-theme';
+  const buttons = Array.from(document.querySelectorAll('[data-theme-choice]'));
+  function applyTheme(theme) {
+    const allowed = ['sage', 'clay', 'blue', 'rose', 'dark'];
+    const chosen = allowed.includes(theme) ? theme : 'sage';
+    document.body.setAttribute('data-theme', chosen);
+    buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === chosen)));
+    try { localStorage.setItem(key, chosen); } catch (e) {}
+  }
+  buttons.forEach(button => button.addEventListener('click', () => applyTheme(button.dataset.themeChoice)));
+  let saved = 'sage';
+  try { saved = localStorage.getItem(key) || 'sage'; } catch (e) {}
+  applyTheme(saved);
+})();
+</script>
+
+</body></html>
